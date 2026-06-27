@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Michel Aslan — Frontend Developer Student based in Stockholm, Sweden. Specialising in HTML, CSS/SCSS, JavaScript, and React." />
+  <title>Michel Aslan — Frontend Developer</title>
+
+  <!-- Google Fonts: Syne (headings) + Inter (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Inter:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome 6 (icons only, no JS) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ===== NAVIGATION ===== -->
+  <header class="site-header" role="banner">
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="nav__logo" href="#hero" aria-label="Michel Aslan — back to top">MA</a>
+
+      <button
+        class="nav__toggle"
+        aria-label="Open navigation menu"
+        aria-expanded="false"
+        aria-controls="nav-menu"
+      >
+        <span class="nav__bar" aria-hidden="true"></span>
+        <span class="nav__bar" aria-hidden="true"></span>
+        <span class="nav__bar" aria-hidden="true"></span>
+      </button>
+
+      <ul class="nav__menu" id="nav-menu" role="list">
+        <li><a class="nav__link" href="#about">About</a></li>
+        <li><a class="nav__link" href="#skills">Skills</a></li>
+        <li><a class="nav__link" href="#projects">Projects</a></li>
+        <li><a class="nav__link" href="#education">Education</a></li>
+        <li><a class="nav__link" href="#experience">Experience</a></li>
+        <li><a class="nav__link" href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="hero" aria-labelledby="hero-name">
+      <canvas class="hero__canvas" id="particleCanvas" aria-hidden="true"></canvas>
+      <div class="hero__overlay" aria-hidden="true"></div>
+
+      <div class="hero__content">
+        <p class="hero__eyebrow">Hello, I'm</p>
+        <h1 class="hero__name" id="hero-name">Michel Aslan</h1>
+
+        <p class="hero__title" aria-label="Frontend Developer Student">
+          <span class="typewriter" id="typewriter" aria-hidden="true"></span>
+          <span class="sr-only">Frontend Developer Student</span>
+        </p>
+
+        <p class="hero__location">
+          <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+          Stockholm, Sweden
+        </p>
+
+        <div class="hero__cta">
+          <a href="#about" class="btn btn--primary">Explore my work</a>
+          <a href="#contact" class="btn btn--ghost">Get in touch</a>
+        </div>
+      </div>
+
+      <div class="hero__scroll-hint" aria-hidden="true">
+        <span class="hero__scroll-line"></span>
+        <span class="hero__scroll-label">Scroll</span>
+      </div>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section class="section" id="about" aria-labelledby="about-heading">
+      <div class="container">
+
+        <header class="section__header reveal">
+          <span class="section__tag">Who I am</span>
+          <h2 class="section__title" id="about-heading">About me</h2>
+        </header>
+
+        <div class="about__grid">
+          <div class="about__text reveal">
+            <p>
+              Frontend developer student with hands-on experience in
+              <strong>HTML, CSS/SCSS, JavaScript, and React</strong>.
+              I've worked with UX/UI design, responsive development, accessibility,
+              and CMS — in both individual projects and agile group work.
+            </p>
+            <p>
+              Through my education at Nackademin, I translate design and requirements
+              into working, user-friendly solutions using Figma, wireframes, Git, and GitHub.
+              I have a technical background and service experience, and I thrive as a
+              responsible team player focused on collaboration, structure, and results.
+            </p>
+            <p>
+              Whether driving ideas from concept to finished product or collaborating
+              within a team to deliver high-quality work — I'm comfortable throughout
+              the full process.
+            </p>
+          </div>
+
+          <div class="about__stats reveal">
+            <div class="stat-card">
+              <span class="stat-card__number">10+</span>
+              <span class="stat-card__label">Technologies</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-card__number">YH</span>
+              <span class="stat-card__label">Certified education</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-card__number">&#8734;</span>
+              <span class="stat-card__label">Drive to learn</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===== SKILLS ===== -->
+    <section class="section section--alt" id="skills" aria-labelledby="skills-heading">
+      <div class="container">
+
+        <header class="section__header reveal">
+          <span class="section__tag">What I know</span>
+          <h2 class="section__title" id="skills-heading">Skills</h2>
+        </header>
+
+        <div class="skills__grid">
+
+          <div class="skill-group reveal">
+            <h3 class="skill-group__title">Technical</h3>
+            <ul class="skill-tags" role="list" aria-label="Technical skills">
+              <li class="skill-tag">HTML5</li>
+              <li class="skill-tag">CSS / SCSS</li>
+              <li class="skill-tag">JavaScript</li>
+              <li class="skill-tag">React</li>
+              <li class="skill-tag">Git</li>
+              <li class="skill-tag">GitHub</li>
+            </ul>
+          </div>
+
+          <div class="skill-group reveal">
+            <h3 class="skill-group__title">Design &amp; UX</h3>
+            <ul class="skill-tags" role="list" aria-label="Design and UX skills">
+              <li class="skill-tag">Figma</li>
+              <li class="skill-tag">Wireframes</li>
+              <li class="skill-tag">UX / UI Design</li>
+              <li class="skill-tag">Responsive Dev</li>
+              <li class="skill-tag">Accessibility</li>
+              <li class="skill-tag">CMS</li>
+            </ul>
+          </div>
+
+          <div class="skill-group reveal">
+            <h3 class="skill-group__title">Soft Skills</h3>
+            <ul class="skill-tags" role="list" aria-label="Soft skills">
+              <li class="skill-tag">Communication</li>
+              <li class="skill-tag">Client Contact</li>
+              <li class="skill-tag">Agile Teamwork</li>
+              <li class="skill-tag">Problem Solving</li>
+              <li class="skill-tag">Service &amp; Support</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PROJECTS ===== -->
+    <section class="section" id="projects" aria-labelledby="projects-heading">
+      <div class="container">
+
+        <header class="section__header reveal">
+          <span class="section__tag">What I've built</span>
+          <h2 class="section__title" id="projects-heading">Projects</h2>
+        </header>
+
+        <div class="projects__grid">
+
+          <article class="project-card reveal" aria-label="Book Ducks project">
+            <video
+              class="project-card__video"
+              src="images/video.mp4"
+              autoplay
+              muted
+              loop
+              playsinline
+              aria-hidden="true"
+            ></video>
+
+            <div class="project-card__body">
+              <h3 class="project-card__title">Book Ducks</h3>
+              <p class="project-card__desc">
+                A full-stack comic book and graphic novel library built with Strapi 5 as the headless CMS and vanilla HTML, CSS, and JavaScript — no frameworks. Users can browse their collection, rate books on a 1–10 scale, manage a personal reading list, and register or log in through Strapi's built-in authentication. Three visual themes (light, dark, and red) are configured from the CMS admin panel and applied dynamically on the frontend — even the duck in the header switches from green to pink for the red theme.
+              </p>
+              <ul class="project-card__tags" aria-label="Technologies used">
+                <li class="project-tag">Strapi</li>
+                <li class="project-tag">JavaScript</li>
+                <li class="project-tag">HTML / CSS</li>
+                <li class="project-tag">SQLite</li>
+                <li class="project-tag">REST API</li>
+              </ul>
+            </div>
+
+            <div class="project-card__footer">
+              <a
+                class="project-card__link"
+                href="https://github.com/michelaslan/Book-Ducks"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="View Book Ducks on GitHub (opens in new tab)"
+              >
+                <i class="fa-brands fa-github" aria-hidden="true"></i>
+                View on GitHub
+              </a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== EDUCATION ===== -->
+    <section class="section" id="education" aria-labelledby="education-heading">
+      <div class="container">
+
+        <header class="section__header reveal">
+          <span class="section__tag">Background</span>
+          <h2 class="section__title" id="education-heading">Education</h2>
+        </header>
+
+        <ol class="timeline" aria-label="Education history">
+
+          <li class="timeline__item reveal">
+            <div class="timeline__dot" aria-hidden="true"></div>
+            <article class="timeline__card">
+              <span class="timeline__period">2025 – Present</span>
+              <h3 class="timeline__role">Frontend Developer</h3>
+              <span class="timeline__org">Nackademin</span>
+              <p class="timeline__desc">
+                Higher Vocational Education (YH) programme covering the full frontend stack —
+                HTML, CSS/SCSS, JavaScript, React, UX/UI design, accessibility, agile methods,
+                and professional tools including Git, Figma, and GitHub.
+              </p>
+            </article>
+          </li>
+
+          <li class="timeline__item reveal">
+            <div class="timeline__dot" aria-hidden="true"></div>
+            <article class="timeline__card">
+              <span class="timeline__period">2019 – 2022</span>
+              <h3 class="timeline__role">Technology Science — Teknikvetenskap</h3>
+              <span class="timeline__org">Bromma Gymnasium</span>
+              <p class="timeline__desc">
+                Engineering track with a focus on physics, mathematics, and technical science —
+                including construction calculations, material science, and preparation for
+                higher technical education.
+              </p>
+            </article>
+          </li>
+
+        </ol>
+      </div>
+    </section>
+
+    <!-- ===== EXPERIENCE ===== -->
+    <section class="section section--alt" id="experience" aria-labelledby="experience-heading">
+      <div class="container">
+
+        <header class="section__header reveal">
+          <span class="section__tag">Work history</span>
+          <h2 class="section__title" id="experience-heading">Experience</h2>
+        </header>
+
+        <ol class="timeline" aria-label="Work experience">
+
+          <li class="timeline__item reveal">
+            <div class="timeline__dot" aria-hidden="true"></div>
+            <article class="timeline__card">
+              <span class="timeline__period">Oct 2022 – Apr 2023 &amp; Nov 2024 – Present</span>
+              <h3 class="timeline__role">Traffic Controller</h3>
+              <span class="timeline__org">
+                Taxi Stockholm AB
+                <span class="timeline__badge">Part-time</span>
+              </span>
+              <p class="timeline__desc">
+                Coordinating taxi dispatching and traffic flow across Stockholm, handling
+                real-time communication and problem-solving in a fast-paced operational
+                environment. Developed strong decision-making and communication skills
+                under pressure.
+              </p>
+            </article>
+          </li>
+
+          <li class="timeline__item reveal">
+            <div class="timeline__dot" aria-hidden="true"></div>
+            <article class="timeline__card">
+              <span class="timeline__period">Feb 2022 – Jun 2022</span>
+              <h3 class="timeline__role">Appointment Setter</h3>
+              <span class="timeline__org">
+                Svensk Ekonomiplanering AB
+                <span class="timeline__badge">Part-time</span>
+              </span>
+              <p class="timeline__desc">
+                Client outreach and scheduling of financial planning appointments. Practised
+                professional communication, client relationship management, and structured
+                sales methodology.
+              </p>
+            </article>
+          </li>
+
+        </ol>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section class="section" id="contact" aria-labelledby="contact-heading">
+      <div class="container">
+
+        <header class="section__header reveal">
+          <span class="section__tag">Say hello</span>
+          <h2 class="section__title" id="contact-heading">Get in Touch</h2>
+        </header>
+
+        <p class="contact__intro reveal">
+          I'm currently studying and open to internship opportunities, freelance projects,
+          and collaborations. Feel free to reach out through any of the channels below.
+        </p>
+
+        <div class="contact__grid reveal">
+
+          <a class="contact-card" href="mailto:michel.aslan@yh.nackademin.se"
+             aria-label="Send an email to Michel Aslan">
+            <span class="contact-card__icon" aria-hidden="true">
+              <i class="fa-solid fa-envelope"></i>
+            </span>
+            <span class="contact-card__body">
+              <span class="contact-card__label">Email</span>
+              <span class="contact-card__value">michel.aslan@yh.nackademin.se</span>
+            </span>
+            <i class="fa-solid fa-arrow-right contact-card__arrow" aria-hidden="true"></i>
+          </a>
+
+          <a class="contact-card" href="tel:+46734340935"
+             aria-label="Call Michel Aslan">
+            <span class="contact-card__icon" aria-hidden="true">
+              <i class="fa-solid fa-phone"></i>
+            </span>
+            <span class="contact-card__body">
+              <span class="contact-card__label">Phone</span>
+              <span class="contact-card__value">+46 73 434 09 35</span>
+            </span>
+            <i class="fa-solid fa-arrow-right contact-card__arrow" aria-hidden="true"></i>
+          </a>
+
+          <a class="contact-card" href="https://linkedin.com/in/michel-aslan-767a012a0/"
+             target="_blank" rel="noopener noreferrer"
+             aria-label="View Michel Aslan's LinkedIn profile (opens in new tab)">
+            <span class="contact-card__icon" aria-hidden="true">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </span>
+            <span class="contact-card__body">
+              <span class="contact-card__label">LinkedIn</span>
+              <span class="contact-card__value">michel-aslan-767a012a0</span>
+            </span>
+            <i class="fa-solid fa-arrow-right contact-card__arrow" aria-hidden="true"></i>
+          </a>
+
+          <a class="contact-card" href="https://github.com/michelaslan"
+             target="_blank" rel="noopener noreferrer"
+             aria-label="View Michel Aslan's GitHub profile (opens in new tab)">
+            <span class="contact-card__icon" aria-hidden="true">
+              <i class="fa-brands fa-github"></i>
+            </span>
+            <span class="contact-card__body">
+              <span class="contact-card__label">GitHub</span>
+              <span class="contact-card__value">github.com/michelaslan</span>
+            </span>
+            <i class="fa-solid fa-arrow-right contact-card__arrow" aria-hidden="true"></i>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer__inner">
+      <p class="footer__copy">&copy; 2026 Michel Aslan</p>
+      <p class="footer__location">
+        <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+        Stockholm, Sweden
+      </p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
